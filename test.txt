@@ -1,2 +1,2 @@
 abcdef
-edited
+edited by newfile
