@@ -1,0 +1,19 @@
+<project name="IEEEmulator">
+
+	<target name="init">
+		<mkdir dir="out" />
+	</target>
+
+	<target name="build" depends="init">
+		<javac srcdir="." destdir="out" />
+	</target>
+
+	<target name="run" depends="build">
+		<java classpath="out" classname="Main" />
+	</target>
+
+	<target name="clean">
+		<delete dir="out" />
+	</target>
+
+</project>
